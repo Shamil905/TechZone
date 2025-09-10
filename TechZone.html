@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TechZone</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto&display=swap');
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #0f0f1a;
+      font-family: 'Roboto', sans-serif;
+      color: #e0e0e0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background: linear-gradient(90deg, #00ffe7, #0077ff);
+      padding: 30px 20px;
+      text-align: center;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2.8rem;
+      letter-spacing: 4px;
+      color: #0f0f1a;
+      text-shadow: 0 0 15px #00ffe7, 0 0 20px #0077ff;
+      animation: pulse 3s infinite alternate;
+    }
+
+    @keyframes pulse {
+      0% {
+        text-shadow: 0 0 15px #00ffe7, 0 0 20px #0077ff;
+      }
+
+      100% {
+        text-shadow: 0 0 25px #00fff0, 0 0 35px #00aaff;
+      }
+    }
+
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #1a1a2e;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 0 15px #00ffe7aa;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 30px #00ffe7ff;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #00ffe7;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .card p {
+      color: #bbb;
+      line-height: 1.5;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0a0a13;
+      color: #555;
+      font-size: 0.9rem;
+      margin-top: auto;
+      box-shadow: inset 0 1px 0 #111;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        font-size: 2rem;
+        letter-spacing: 2px;
+      }
+
+      main {
+        padding: 20px 10px;
+        gap: 15px;
+      }
+
+      .card {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>TechZone - Gələcəyin Texnologiyası</header>
+  <main>
+    <article class="card">
+      <h3>AI və Süni İntellektin Gələcəyi</h3>
+      <p>AI texnologiyaları həyatımızı dəyişdirir. Yeni alqoritmlər və maşın öyrənmə modelləri sürətlə inkişaf edir və
+        tətbiq sahələri genişlənir.</p>
+    </article>
+    <article class="card">
+      <h3>5G və İnternet Sürətləri</h3>
+      <p>5G şəbəkələri daha sürətli və etibarlı internet təcrübəsi təqdim edir. Bu texnologiya yeni imkanlar açır və
+        mobil cihazların performansını artırır.</p>
+    </article>
+    <article class="card">
+      <h3>Kiber Təhlükəsizlik</h3>
+      <p>Online təhlükəsizlik hər zamankindən daha vacibdir. Şəxsi məlumatların qorunması və hücumlardan müdafiə üçün
+        yeni üsullar tətbiq olunur.</p>
+    </article>
+    <article class="card">
+      <h3>Quantum Hesablama</h3>
+      <p>Kvantal kompüterlər ən mürəkkəb problemləri sürətlə həll edə biləcək gücə malikdir. Bu sahə gələcəyin hesablama
+        standartlarını müəyyənləşdirəcək.</p>
+    </article>
+    <article class="card">
+      <h3>Bulud Texnologiyaları</h3>
+      <p>Bulud xidmətləri şirkətlərə məlumatlarını daha effektiv idarə etməyə imkan verir. İnfrastrukturun elastikliyi
+        və qənaəti əsas üstünlüklərdəndir.</p>
+    </article>
+    <article class="card">
+      <h3>Elektrikli Avtomobillər</h3>
+      <p>Elektrikli nəqliyyat vasitələri ətraf mühitə təsiri azaltmaqda mühüm rol oynayır. Yeni batareyalar və şarj
+        infrastrukturunun inkişafı sürətlənir.</p>
+    </article>
+    <article class="card">
+      <h3>Teknoloji Gələcəyi Necə qurur </h3>
+      <p>Texnologiya gələcəyimizi qurur. Bildiyiniz kimi, süni intellekt (AI) artıq demək olar ki, hər şeyi bacarır. Ona
+        görə də gələcək getdikcə daha sürətlə inkişaf edir.</p>
+    </article>
+    <article class="card">
+      <h3>Texnologiya səbəbindən məhv olan işlər</h3>
+      <p>
+        Texnologiyanın inkişafı ilə bir çox iş sahələrində robotlar və avtomatlaşdırma sistemi yaranır. Məsələn,
+        banklarda kassir işçilərin yerini self-servis kiosklar və süni intellekt sistemləri tutur.
+        Eyni zamanda, fabriklərdə, anbarlarda və ofislərdə də robotlar sadə və təkrarçı işləri əvəz edir. Bu
+        dəyişikliklər işlərin daha sürətli və dəqiq görülməsini təmin edir, amma bəzi ənənəvi iş yerləri azalır.
+      </p>
+    </article>
+    <article class="card">
+      <h3>Texnologiya və İnsan Əməkdaşlığı</h3>
+      <p>
+        Texnologiya və insan əməkdaşlığı gələcəyin ən önəmli xüsusiyyətlərindən biridir. Robotlar və süni intellekt
+        insanlar üçün sadə və təkrarçı işləri görərkən, insanlar yaradıcı, analitik və emosional qərarlar verir.
+        Bu əməkdaşlıqla daha məhsuldar, sürətli və innovativ həllər ortaya çıxır. Gələcəkdə texnologiyaya yiyələnmək və
+        onu insan bacarıqları ilə birləşdirmək uğurun əsas açarı olacaq.
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>Texnologiyadan İnsana Doğru Dəyişən Dünya</h3>
+      <p>
+        Texnologiya hər gün həyatımızı asanlaşdırır və yeni imkanlar yaradır. Bu dəyişikliklər həm də iş dünyasını,
+        təhsil sistemini və sosial münasibətləri formalaşdırır.
+        Ənənəvi peşələr yoxa çıxarkən, yeni ixtisaslar və biznes sahələri yaranır. İnsanın adaptasiya qabiliyyəti və
+        davamlı öyrənmə arzusu bu yeni dünyada uğur qazanmaq üçün vacib şərtlərdir.
+      </p>
+    </article>
+    <article class="card">
+      <h3>Robotların İnsan Həyatında Artan Rolu</h3>
+      <p>
+        Robot texnologiyaları sənayedən tutmuş gündəlik həyatımıza qədər geniş istifadə olunur. Tibbdə robot cərrahlar,
+        evdə robot tozsoranlar, anbarlarda isə avtomatik yük daşıyıcılar işləyir.
+        Robotlar insanların həyatını asanlaşdırır, təhlükəli işlərdən qoruyur və məhsuldarlığı artırır. Gələcəkdə daha
+        ağıllı və müstəqil robotların ortaya çıxması həyatımızda böyük dəyişikliklər yaradacaq.
+      </p>
+    </article>
+    <article class="card">
+      <h3>Blockchain Texnologiyası və Maliyyənin Gələcəyi</h3>
+      <p>
+        Blockchain, mərkəzləşdirilməmiş və təhlükəsiz məlumat bazası olaraq maliyyə sistemlərini dəyişdirir.
+        Kriptovalyutalar və ağıllı müqavilələr banklara və üçüncü tərəflərə ehtiyacı azaldır.
+        Gələcəkdə blockchain əsaslı sistemlər şəffaflıq, sürət və təhlükəsizlik baxımından maliyyə xidmətlərini inqilabi
+        şəkildə yenidən quracaq.
+      </p>
+    </article>
+    <article class="card">
+      <h3>İnsan və Robotların Harmoniyası</h3>
+      <p>
+        Gələcəkdə insanlar və robotlar birgə işləyərək yeni imkanlar yaradacaq. Robotlar insanların yorucu və təhlükəli
+        işlərini üzərlərinə götürəcək, insanlar isə daha yaradıcı və strateji işlərə fokuslanacaq.
+        Bu harmoniyanın qurulması əmək məhsuldarlığını və həyat keyfiyyətini artıracaq.
+      </p>
+    </article>
+    <article class="card">
+      <h3>Ağıllı Ev Sistemləri və Gələcək Yaşayış</h3>
+      <p>
+        Ağıllı ev texnologiyaları gündəlik həyatımızı daha rahat və enerji səmərəli edir. Sensorlar, ağıllı termostatlar
+        və səsli idarəetmə sistemləri evimizi daha ağıllı edir.
+        Gələcəkdə evlərimiz öz-özünə enerji idarə edən, təhlükəsizlik sistemləri ilə təchiz olunmuş, insan ehtiyaclarını
+        proqnozlaşdıran məkana çevriləcək.
+      </p>
+    </article>
+    <article class="card">
+      <h3>Texnologiyanın İnsan Hüquqlarına Təsiri</h3>
+      <p>
+        Yeni texnologiyalar həm insan hüquqlarını qorumaqda, həm də risk altına qoymaqda rol oynayır. Məlumat məxfiliyi,
+        kütləvi nəzarət və süni intellektin qərar vermə prosesində şəffaflıq əsas məsələlərdir.
+        Gələcəkdə texnologiyanın etik istifadəsi və insan hüquqlarının qorunması üçün beynəlxalq əməkdaşlıq vacib
+        olacaq.
+      </p>
+    </article>
+    <article class="card">
+      <h3>Avtomatlaşdırılmış Nəqliyyat və Gələcək Mobilik</h3>
+      <p>
+        Avtonom avtomobillər, dron taksiləri və ağıllı nəqliyyat sistemləri şəhər həyatını dəyişdirir. Bu texnologiyalar
+        səyahəti daha təhlükəsiz, sürətli və ekoloji cəhətdən təmiz edir.
+        Gələcəkdə nəqliyyat sistemləri insan müdaxiləsi olmadan işləyəcək.
+      </p>
+    </article>
+    <article class="card">
+      <h3>Rəqəmsal İqtisadiyyatın İnkişafı</h3>
+      <p>
+        Kriptovalyutalar, NFT-lər və DeFi platformaları iqtisadiyyatda inqilabi dəyişikliklər gətirir. İnsanlar rəqəmsal
+        valyuta və aktivlər vasitəsilə yeni biznes modelləri yaradır.
+        Bu dəyişikliklər iqtisadiyyatı daha inklüziv və qlobal hala gətirir.
+      </p>
+    </article>
+    <article class="card">
+      <h3>Kvant İnternet və Gələcəyin Şəbəkələri</h3>
+      <p>
+        Kvant internet yeni nəsil şəbəkə texnologiyasıdır ki, məlumatların ultra təhlükəsiz və sürətli ötürülməsini
+        təmin edir.
+        Bu texnologiya klassik interneti əvəz edərək kiberhücumlara qarşı tam müdafiə verəcək və gələcəyin əlaqə
+        sistemlərini formalaşdıracaq.
+      </p>
+    </article>
+
+  </main>
+  <footer>© 2025 TechZone. Bütün hüquqlar qorunur.</footer>
+ 
+
+</body>
+
+</html>
